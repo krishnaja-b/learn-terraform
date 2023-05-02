@@ -3,7 +3,7 @@ resource "aws_instance" "frontend" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-003f987727c69b5e1"]
   tags = {
-    name="frontend"
+    Name="frontend"
   }
 }
 resource "aws_route53_record" "frontend" {
@@ -19,7 +19,7 @@ resource "aws_instance" "mongodb" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-003f987727c69b5e1"]
   tags = {
-    name="mongodb"
+    Name="mongodb"
   }
 }
 resource "aws_route53_record" "mongodb" {
@@ -36,7 +36,7 @@ resource "aws_instance" "catalouge" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-003f987727c69b5e1"]
   tags = {
-    name="catalouge"
+    Name="catalouge"
   }
 }
 resource "aws_route53_record" "catalouge" {
@@ -53,7 +53,7 @@ resource "aws_instance" "cart" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-003f987727c69b5e1"]
   tags = {
-    name="cart"
+    Name="cart"
   }
 }
 resource "aws_route53_record" "cart" {
@@ -70,7 +70,7 @@ resource "aws_instance" "user" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-003f987727c69b5e1"]
   tags = {
-    name="user"
+    Name="user"
   }
 }
 resource "aws_route53_record" "user" {
@@ -87,7 +87,7 @@ resource "aws_instance" "redis" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-003f987727c69b5e1"]
   tags = {
-    name="redis"
+    Name="redis"
   }
 }
 resource "aws_route53_record" "redis" {
@@ -104,7 +104,7 @@ resource "aws_instance" "mysql" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-003f987727c69b5e1"]
   tags = {
-    name="mysql"
+    Name="mysql"
   }
 }
 resource "aws_route53_record" "mysql" {
