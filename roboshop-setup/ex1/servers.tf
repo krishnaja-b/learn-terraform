@@ -121,7 +121,7 @@ resource "aws_instance" "payment" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-003f987727c69b5e1"]
   tags = {
-    name="payment"
+    Name="payment"
   }
 }
 resource "aws_route53_record" "payment" {
@@ -138,7 +138,7 @@ resource "aws_instance" "rabbitmq" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-003f987727c69b5e1"]
   tags = {
-    name="rabbitmq"
+    Name="rabbitmq"
   }
 }
 resource "aws_route53_record" "rabbitmq" {
@@ -155,7 +155,7 @@ resource "aws_instance" "shipping" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-003f987727c69b5e1"]
   tags = {
-    name="shipping"
+    Name="shipping"
   }
 }
 resource "aws_route53_record" "shipping" {
