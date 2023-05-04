@@ -20,3 +20,20 @@ output "cli" {
 }
 variable "input" {}
 
+variable "d1" {
+  default =[
+    {
+      course_name="aws"
+      trainer_name="thanu"
+    },
+    {
+      course_name="aws"
+      trainer_name="thanu"
+    }
+  ]
+}
+ output "course_names" {
+   value = "var.d1.*.course_name"
+ }
+
+
