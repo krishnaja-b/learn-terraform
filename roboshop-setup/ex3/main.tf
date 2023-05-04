@@ -26,3 +26,4 @@ variable "instances" {
     }
   }
   }
+
