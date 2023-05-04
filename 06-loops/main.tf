@@ -17,12 +17,12 @@
  variable "d3" {
    default = {
      apple={
-       name=apple
-       count=3
+       name="apple"
+       count="3"
      }
      banana={
-       name=banana
-       count=30
+       name="banana"
+       count="30"
      }
    }
  }
