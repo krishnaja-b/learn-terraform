@@ -28,7 +28,7 @@ variable "instances" {
   }
 
 output "ec2" {
-  value = aws_instance.instances
+  value =[for k,v in aws_instance.instances : v.public_ip]
 }
 
 
