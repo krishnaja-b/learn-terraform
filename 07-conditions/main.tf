@@ -13,3 +13,5 @@ resource "aws_instance" "test1" {
   instance_type = var.instance_type == ""  ? "t3.micro" : var.instance_type
 }
 
+
+
