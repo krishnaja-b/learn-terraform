@@ -14,13 +14,13 @@ module "sg" {
 
 variable "instances" {
   default = {
-    catalouge= {
-      name="catalouge"
-      type="t3.micro"
+    catalogue = {
+      name= "catalouge"
+      type= "t3.micro"
     }
     user={
-      name="user"
-      type="t3.small"
+      name= "user"
+      type= "t3.small"
     }
   }
 }
