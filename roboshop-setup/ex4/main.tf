@@ -5,9 +5,8 @@ module "ec2" {
   instance_type=each.value["type"]
 }
 
-module "sg"{
+module "sg" {
   source="./sg"
-
 }
 
 
@@ -24,4 +23,5 @@ variable "instances" {
     }
   }
 }
+
 
