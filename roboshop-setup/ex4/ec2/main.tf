@@ -12,6 +12,7 @@ resource "aws_instance" "ec2" {
     Name=var.component
   }
 }
+
 resource "aws_route53_record" "record" {
   zone_id = "Z013366722COOZOYCJ4IN"
   name    = "${var.component}-dev.aws43.xyz"
