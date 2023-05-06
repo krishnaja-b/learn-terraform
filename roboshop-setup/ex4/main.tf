@@ -15,7 +15,7 @@ module "sg" {
 variable "instances" {
   default = {
     catalogue = {
-      name= "catalouge"
+      name= "catalogue"
       type= "t3.micro"
     }
     user={
