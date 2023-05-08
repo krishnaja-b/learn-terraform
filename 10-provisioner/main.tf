@@ -7,7 +7,7 @@ resource "aws_instance" "ec2" {
   }
 
 
-provisioner "remote-exec" {
+provisioner "remote-exec" "ec2" {
   connection {
     host=self.public_ip
     user = "root"
