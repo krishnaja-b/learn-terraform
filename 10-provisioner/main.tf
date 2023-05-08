@@ -14,6 +14,7 @@ provisioner "remote-exec" {
     password = "DevOps321"
 
   }
+
   inline=[
          "hello world"
   ]
