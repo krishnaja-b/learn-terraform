@@ -16,7 +16,7 @@ provisioner "remote-exec"  {
   }
 
   inline=[
-       echo,"hello world"
+       "hello world"
   ]
 }
 }
